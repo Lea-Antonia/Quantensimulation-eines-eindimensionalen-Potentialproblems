@@ -1,1 +1,7 @@
 # Quantensimulation-eines-eindimensionalen-Potentialproblems
+In der Datei Quellcode_zur_Quantensimulation.ipynb wird die zeitliche Entwicklung eines Wellenpakets in verschiedenen eindimensionalen Potentialen mit Hilfe der Python Bibliothek Qiskit berechnet. In der letzten Zelle wird das Ergebnis grafisch dargestellt. Es handelt sich zu dem Quellcode ergänzend zur Bachelorarbeit mit dem Titel: Quantensimulation eines eindimensionalen Potentialproblems.
+In der ersten Zelle können zum Einen die Parameter der Anfangswellenfunktion variiert werden. Dazu gehören: x_res, mu, mu2, m und sig
+Desweiteren können Parameter für die Simulation gewählt werden. Diese sind die Anzahl der Qubits n, und die Größe eines Zeitschritts eps.
+Auch Parameter für die Potentiale können gewählt werden.
+In der voletzten Zelle wird die eigentilche Berechnung durchgeführt für die dort gewählte Anzahl an Zeitschritten T. Alternativ zu der Funktion gauss kann auch die Funktion gauss_2gleich gewählt werden. Die Wahl definiert, ob die Wahrscheinlichkeitsverteilung für ein oder zwei gleiche Teilchen (mit entgegengesetztem Impuls) zu Beginn im Quantenregister eingestellt werden. 
+In der for-Schleife für den Zeitschritt kann das Potential ausgewählt werden. Zur Auswahl stehen ein lineares Potential, das harmonische Oszillatorpotential und zwei Potentialbarrieren (eine Breite bei Ort> 0.5 x_res und eine schmale bei Ort= 33.5 x_res)
